@@ -1,0 +1,110 @@
+.youtube__wrap {
+  overflow: hidden;
+}
+.youtube__inner {
+  height: 700px;
+  position: relative;
+  .text {
+    > h3 {
+      font-size: 50px;
+      font-weight: 700;
+      margin-bottom: 50px;
+    }
+    > p {
+      font-size: 22px;
+      font-weight: 300;
+      margin-bottom: 28px;
+    }
+    > a {
+      border-radius: 50px;
+      margin-bottom: 60px;
+    }
+  }
+  .youtube__item {
+    @include flex-between;
+    margin-top: 70px;
+    margin-bottom: 120px;
+    position: absolute;
+    > div {
+      width: 450px;
+      margin-right: 20px;
+      > img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.Youtube__page {
+}
+.youtube__slider {
+  margin-bottom: 60px;
+  a {
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.youtube__search {
+  text-align: center;
+  margin-bottom: 50px;
+  input {
+    border: 1px solid #e8ecf2;
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 50px;
+    min-width: 300px;
+    margin-right: 10px;
+  }
+  button {
+    @include button(#f7100d, #fff);
+    border-radius: 50px; //bdrs
+  }
+}
+.Youtube_tag {
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    button {
+      border: 1px solid #f7100d;
+      padding: 10px 20px;
+      margin: 0 10px;
+      color: #f7100d;
+      border-radius: 50px;
+    }
+    :hover {
+      background-color: #f7100d;
+      color: #fff;
+    }
+  }
+}
+.Youtube_cont {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+
+    li {
+      width: 24%;
+      margin-bottom: 4%;
+    }
+    > img {
+    }
+    span {
+      display: block;
+      margin: 4px 0;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 1; /* 라인수 */
+      -webkit-box-orient: vertical;
+      word-wrap: break-word;
+    }
+  }
+}

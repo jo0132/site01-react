@@ -1,0 +1,109 @@
+.footer__wrap{
+    background-color: var(--bg_section);
+}
+.footer__inner{
+    @include flex-between;
+    flex-wrap: wrap;
+    .footer__text{
+        width: 30%;
+        > h5 {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+        > p {
+            font-size: 14px;
+            color: #808080;
+            margin-bottom: 25px;
+            > a {
+               color: #808080;
+            }
+        }
+        > ul {
+            display: flex;
+            li {
+                width: 45px;
+                height: 45px;
+                border-radius: 50px;
+                background-color: #F5F5F5;
+                margin-right: 10px;
+                &:nth-child(1) {
+                    width: 45px;
+                    height: 45px;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 25px;
+                    background-image: url(../../images/footer/Instagram.png);
+                }
+                &:nth-child(2) {
+                    width: 45px;
+                    height: 45px;
+                    width: 45px;
+                    height: 45px;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 25px;
+                    background-image: url(../../images/footer/YouTube.png);
+                }
+                &:nth-child(3) {
+                    width: 45px;
+                    height: 45px;
+                    width: 45px;
+                    height: 45px;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 25px;
+                    background-image: url(../../images/footer/Link-1.png);
+                }
+                &:nth-child(4) {
+                    width: 45px;
+                    height: 45px;
+                    width: 45px;
+                    height: 45px;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 25px;
+                    background-image: url(../../images/footer/Link.png);
+                }
+                &:nth-child(5) {
+                    width: 45px;
+                    height: 45px;
+                    width: 45px;
+                    height: 45px;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 25px;
+                    background-image: url(../../images/footer/Facebook.png);
+                }
+            }
+        }
+    }
+    .footer__menu{
+        width: 70%;
+        @include flex-between;
+        margin-bottom: 50px;
+         > div {
+            width: 25%;
+            > h4 {
+                font-size: 18px;
+                color: #000;
+                margin-bottom: 24px;
+            }
+            > ul {
+                li {
+                    a {
+                        color: #808080;
+                        margin-bottom: 13px;
+                    }
+                }
+            }
+         }
+    }
+    .footer__right{
+        padding-top: 50px;
+        border-top: 1px solid #E6E6E6;
+
+        width: 100%;
+        @include flex-center;
+    }
+}
+.footer__wrap{}
